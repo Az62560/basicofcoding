@@ -1,0 +1,282 @@
+/*On applique une marge de 0 pour que le navigateur ne décale pas la page et on applique la police sur l'ensemble de la page*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Barre de navigation, on va chercher la div parent pour appliquer flex */
+.top-nav{
+    display: flex;
+    justify-content: center;   
+}
+
+.top-nav a img{
+    height: 3rem;
+    width: auto;
+    margin: 1rem;
+}
+
+.bottom-nav{
+    background-color: black;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottom-nav a{
+    color: white;
+    text-decoration: none;
+}
+
+/*le hover : quand on passe la souris au dessus ça change la couleur*/
+.bottom-nav a:hover{
+    color: #573898;
+}
+
+main{
+    margin: 3.5rem 6rem 3.5rem 6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.apprendre-html{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 3rem 0;  
+}
+
+.apprendre-html img{
+    height: 2rem;
+    margin: 0 1.5rem 0 4rem; 
+}
+
+.text-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text p{
+    width: 35vw;  
+    background-color: rgb(87,56,152,0.3);
+    padding: 2rem 0 2rem 1rem;
+    margin-top: 4rem;
+}
+
+.text-img img{
+    padding-top: 4rem;
+    width: 25vw;
+    height: auto;  
+}
+
+.example{
+    margin-top: 4rem;
+}
+
+.apprendre-plus{
+    color:#573898;
+    margin: 6rem 0 0 4rem;
+}
+
+.go-to{
+    display: flex;
+    align-items: center;
+    margin: 4rem 0 3rem 0;
+}
+
+.go-to a{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.go-to a:hover{
+    color: #573898;
+}
+
+.logo-nav-footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10rem;
+}
+
+.logo-footer{
+    margin-left: 7rem;
+    padding-top: 2rem;
+}
+
+.nav-footer{
+    margin: 2rem 17rem 0 0;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+}
+
+.nav-footer a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+   }
+
+.nav-footer a:hover{
+    color: #573898;
+}
+
+.rights{ 
+    background-color: black;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-bottom:1rem;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    
+    main{
+        margin: 0 1rem 0 1rem;
+    }
+
+    .apprendre-html{
+        margin-top: 4rem;
+    }
+
+    .logo-footer{
+        margin-left: 2rem;
+    }
+    
+    .nav-footer{
+        margin: 2rem 0 0 0;
+    }
+}
+
+@media screen and (max-width:560px){
+
+    main{
+        margin: 0 1rem 0 1rem;
+    }
+
+    .text-img{
+        flex-direction: column;
+    }
+
+    .text p{
+        width: 95%;
+    }
+    
+}
+@media screen and (max-width: 540px){
+    
+    main{
+        margin: 0 1rem 0 1rem;
+    }
+
+    .text-img img{
+        margin-top: 1rem;
+        padding-top: 0;
+    }
+
+    .example{
+        margin-top: 1rem;
+    }
+
+    .apprendre-plus{
+        margin: 3rem 0 0 2rem;
+
+    }
+
+    .go-to{
+        margin: 1rem 0 1rem 0;
+    }
+}
+
+@media screen and (max-width:440px){
+
+    .logo-nav-footer img{
+        height: 3rem;
+    }   
+}
+
+@media screen and (max-width: 360px){
+    
+    *{
+        font-size: small;
+    }
+
+    main{
+        margin: 0 1rem 0 1rem;
+    }
+
+    .img img{
+        height: auto;
+    }
+    
+    .logo-footer{
+        margin-left: 0;
+    }
+
+    .logo-footer img{
+        width: 5rem;
+        margin-left: 1rem;
+    }
+
+    .nav-footer{
+        flex-direction: column;
+        padding-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 280px){
+
+    main{
+        margin: 0 1rem 0 1rem;
+        padding: 0;
+    }
+
+    .text-img{
+        flex-direction: column;
+        align-items: normal;
+        width: 100%;
+    }
+    
+    .text p{
+        font-size: smaller;
+        width: 95%;
+    }
+
+    .img{
+        display:flex;
+        justify-content: center;
+    }
+
+    .example p{
+        font-size: smaller;
+    }
+
+    .logo-nav-footer{
+        height: 5rem;
+    }
+
+    .logo-footer{
+        margin: 0 1rem 0 1rem;
+    }
+
+    .logo-footer img{
+        height: 3rem;
+    }
+
+    .nav-footer{
+        margin: 2rem 0 0 0;
+    }
+
+    .rights{
+        padding-top: 1rem;
+    }
+}
